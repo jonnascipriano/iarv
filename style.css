@@ -239,6 +239,109 @@ header{
     color: var(--primary-color);
 }
 
+#dizimos-ofertas {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+
+    background-image: url(assets/imgs/background-ofertas.jpg);
+}
+
+#dizimos-ofertas h2 {/* Usando o seu amarelo para destacar */
+    margin-bottom: 30px;
+}
+
+.oferta-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    
+    /* Reutilizando o seu estilo de fundo translúcido (glassmorphism) */
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.oferta-texto {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.oferta-texto h3 {
+    font-family: "Busorama", sans-serif;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.oferta-texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.oferta-texto blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+    color: #e0e0e0;
+}
+
+.oferta-texto blockquote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.oferta-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--tertiary-color);
+}
+
+.oferta-qr img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Responsividade extra para o container de ofertas */
+@media (max-width: 768px) {
+    .oferta-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .oferta-texto {
+        text-align: center;
+    }
+    
+    .oferta-texto blockquote {
+        border-left: none;
+        border-top: 4px solid var(--primary-color);
+        padding-left: 0;
+        padding-top: 15px;
+    }
+}
+
 footer{
     
     background-color: var(--tertiary-color);
