@@ -206,7 +206,7 @@ header{
     
     overflow: hidden;
 
-    width: 300px;
+    width: 400px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
@@ -276,3 +276,8 @@ footer{
     }
 }
 
+@media (max-width: 768px) {
+    .card{
+        width: 300px;
+    }
+}
