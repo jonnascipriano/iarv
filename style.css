@@ -350,10 +350,12 @@ header{
     justify-content: center;
     padding: 60px 20px;
     text-align: center;
+
+    background-color: #fff;
 }
 
 #plano-leitura h2 {
-    color: var(--text-color);
+    color: var(--primary-color);
     margin-bottom: 30px;
 }
 
@@ -369,7 +371,6 @@ header{
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 2px solid var(--primary-color);
     border-radius: 15px;
     padding: 40px;
 }
